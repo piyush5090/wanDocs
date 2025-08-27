@@ -599,13 +599,14 @@
 <li>Each item points to a Markdown file (.md) inside your project.</li>
 <li>Appears differently in different themes.</li>
 </ul>
-<pre><code class="language-markdown">Home            -&gt; index.md
-Setup Guide     -&gt; setup-guide.md
-Markdown Guide  -&gt; markdown-guide.md
-mkdocs-yml      -&gt; mkdocs-yml.md
-About
-   ├─ about     -&gt; about.md
-   └─ about us  -&gt; aboutUs.md
+<pre><code class="language-markdown">nav:
+    - Home: index.md
+    - Setup Guide: setup-guide.md
+    - Markdown Guide: markdown-guide.md
+    - mkdocs-yml : mkdocs-yml.md 
+    - About: 
+      - about: about.md
+      - about us : aboutUs.md
 </code></pre>
 <p>Screenshot:</p>
 <p><img alt="navmanu image" src="../assets/navmenu.png" /></p>
